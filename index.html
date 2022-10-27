@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Assessment-3</title>
+</head>
+
+<body>
+    <h1>Iteration Statements</h1>
+    <pre style="color: blue; font-size:large ; ">
+    // 1.Find the number of digits
+    const Find_Digits = (N) =>
+    {
+    let count = 0;
+    while (N != 0)
+    {
+    N = parseInt(N / 10);
+    count++;
+    }
+    return count;
+    };
+
+    // 2.Find the Fives.
+    const Find_Five = (N) =>
+    {
+    let c = 0;
+    let d = 5;
+    while (N> 0) {
+    //reminder
+    if (N % 10 == d)
+    c++;
+    N = parseInt(N / 10); // division
+    }
+    return c;
+    };
+
+    // 3.Find Sum
+    const findSum = (n) => {
+        let curr = 0, sum = 0;
+        for (let i = 1; i <= n; i++) {
+            if(i%2===0)
+            {
+             sum += i; 
+            }
+          }
+          return sum;
+    };
+
+    // 4.Find the sum of the digits of a given number.
+    const Number_Sum = (N) => 
+    {
+      let sum = 0;
+          {
+            while (N != 0) {
+                sum = sum + N % 10; //reminder
+                N = parseInt(N / 10); // division
+                }
+           return sum;
+          }
+    };
+
+    // 5.Print the Odds.
+    const Print_Odd = (N) => 
+{
+     for(i=2;i<=N;i++)
+    {
+      if(i==2)
+      {
+        console.log(i);
+      }
+      if(i%2===1)
+      {
+        console.log(i);
+      } 
+    }
+};
+
+    // 6.Print the Pattern.
+    const Print_pattern = (N) => 
+    {
+        let string = "";
+        for(let i=1;i<=N;i++)
+        {
+        for(let j=1;j<=i;j++)
+        {
+         string += "*";
+        }
+          string += "\n";
+        }
+        console.log(string);  
+    };
+
+   // 7.Check whether a Number is a prime or not.
+    const Prime_Check = (number) => 
+    {
+	    let isPrime = true;
+        let a ="YES";
+        let b ="NO";
+        if (number === 1) 
+        {
+        return b;
+        }
+    else if (number > 1) {
+    for (let i = 2; i < number; i++) 
+    {
+        if (number % i === 0) 
+        {
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime) 
+    {
+        return a;
+    } 
+    else 
+    {
+         return b;
+    }
+    }	
+};
+
+    // 8.Print Numbers
+    const printNumbers = (n) => {
+        i = 1;
+        while(i<=n)
+        {
+          console.log(i);
+          i++;
+        }
+      };
+      
+   // 9.Print the Table
+    const Print_Table = (number) => 
+        {
+          for(let i = 1; i <= 10; i++) {      
+              console.log(number + "*" + i + "=" + number*i);
+          }
+          };
+        </pre>
+</body>
+
+</html>
